@@ -14,7 +14,7 @@ function StarRating({ rating }) {
   );
 }
 
-function Review({ reviews }) {
+function Review({reviews}) {
   return (
     <div className="bg-[#5e3b21] shadow-md rounded px-4 py-6 mb-4">
       <div className="flex items-center mb-4">
