@@ -1,6 +1,7 @@
+"use client"
 import React from 'react';
-import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import Link from 'next/link';
 
 const ContactUs = () => {
@@ -15,13 +16,13 @@ const ContactUs = () => {
               <p className="mb-4"><strong>Phone:</strong> 0123456789</p>
               <p><strong>Address:</strong></p>
               <p className="mt-2">
-                CoffeeLab., Main Road Karachi,Pakistan.
+                CoffeeLab., Main Road Karachi, Pakistan.
               </p>
             </div>
 
-             <div className="md:w-1/2">
+            <div className="md:w-1/2">
               <form className="space-y-6" action="https://getform.io/f/bzylpqga" method="POST">
-                 <input
+                <input
                   type="text"
                   placeholder="User Name"
                   className="w-full p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#744e2a] bg-[#5e3b21] text-white"
@@ -34,8 +35,7 @@ const ContactUs = () => {
                   required
                 />
                 <textarea
-                  id="name"
-                  name="text"
+                  name="message"
                   placeholder="Message"
                   className="w-full p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#744e2a] bg-[#5e3b21] text-white"
                   rows={4}
@@ -48,24 +48,25 @@ const ContactUs = () => {
                   Submit Form
                 </button>
               </form>
-            <div className="flex justify-center space-x-4 mt-6">
-            <Link href="#" className="hover:text-[#b58368]" target="_blank" rel="noopener noreferrer">
-              <FaFacebookF/>
-            </Link>
-            <Link href="#"  className="hover:text-[#b58368]" target="_blank" rel="noopener noreferrer">
-              <FaTwitter/>
-            </Link>
-            <Link href="#"  className="hover:text-[#b58368]" target="_blank" rel="noopener noreferrer">
-              <FaInstagram/>
-            </Link>
-            </div>
+
+              <div className="flex justify-center space-x-4 mt-6">
+                  <Link  href='https://facebook.com"' target="_blank" rel="noopener noreferrer" className="hover:text-[#b58368]">
+                    <FontAwesomeIcon icon={faFacebookF} />
+                  </Link>
+                  <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#b58368]">
+                    <FontAwesomeIcon icon={faTwitter} />
+                  </Link>
+                  <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#b58368]">
+                    <FontAwesomeIcon icon={faInstagram} />
+                  </Link>
+              </div>
             </div>
           </div>
         </div>
-       </div>
-       <footer className="bg-[#3c2715] text-center py-4">
+      </div>
+      <footer className="bg-[#3c2715] text-center py-4">
         <p>&copy; 2024 Coffee Company. All rights reserved.</p>
-       </footer>
+      </footer>
     </div>
   );
 };
