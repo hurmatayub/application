@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
 
@@ -50,14 +49,14 @@ const ContactUs = () => {
                 </button>
               </form>
             <div className="flex justify-center space-x-4 mt-6">
-            <Link href="#" target="_blank" rel="noopener noreferrer">
-              <FaFacebookF className="text-white hover:text-[#b58368] text-xl" />
+            <Link href="#" className="hover:text-[#b58368]" target="_blank" rel="noopener noreferrer">
+              <FaFacebookF/>
             </Link>
-            <Link href="#" target="_blank" rel="noopener noreferrer">
-              <FaTwitter className="text-white hover:text-[#b58368] text-xl" />
+            <Link href="#"  className="hover:text-[#b58368]" target="_blank" rel="noopener noreferrer">
+              <FaTwitter/>
             </Link>
-            <Link href="#" target="_blank" rel="noopener noreferrer">
-              <FaInstagram className="text-white hover:text-[#b58368] text-xl" />
+            <Link href="#"  className="hover:text-[#b58368]" target="_blank" rel="noopener noreferrer">
+              <FaInstagram/>
             </Link>
             </div>
             </div>
