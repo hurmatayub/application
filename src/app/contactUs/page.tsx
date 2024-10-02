@@ -1,7 +1,5 @@
 "use client"
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import Link from 'next/link';
 
 const ContactUs = () => {
@@ -48,18 +46,6 @@ const ContactUs = () => {
                   Submit Form
                 </button>
               </form>
-
-              <div className="flex justify-center space-x-4 mt-6">
-                  <Link  href='https://facebook.com"' target="_blank" rel="noopener noreferrer" className="hover:text-[#b58368]">
-                    <FontAwesomeIcon icon={faFacebookF} />
-                  </Link>
-                  <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#b58368]">
-                    <FontAwesomeIcon icon={faTwitter} />
-                  </Link>
-                  <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#b58368]">
-                    <FontAwesomeIcon icon={faInstagram} />
-                  </Link>
-              </div>
             </div>
           </div>
         </div>
