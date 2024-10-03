@@ -23,7 +23,7 @@ export default function Navbar() {
              
             </div>
     <ul className="flex space-x-6">
-             <li><Link href="/" className="hover:bg-[#5e3b21] hover:border hover:border-white py-2 px-6 rounded-full">Home</Link></li>
+             <li><Link  href="/" className="hover:bg-[#5e3b21] hover:border hover:border-white py-2 px-6 rounded-full">Home</Link></li>
               <li><Link href="/about" className="hover:bg-[#5e3b21] hover:border hover:border-white py-2 px-6 rounded-full">About Us</Link></li>
               <li><Link href="/shop" className="hover:bg-[#5e3b21] hover:border hover:border-white py-2 px-6 rounded-full">Shop</Link></li>
               <li><Link href="/reviews" className="hover:bg-[#5e3b21] hover:border hover:border-white py-2 px-6 rounded-full">Reviews</Link></li>
