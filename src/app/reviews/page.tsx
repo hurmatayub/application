@@ -1,20 +1,37 @@
-
 "use client";
-import Head from 'next/head';
+
 import { useState } from 'react';
-function StarRating({ rating }) {
+import Head from 'next/head';
+
+interface ReviewData {
+  id: number;
+  name: string;
+  title: string;
+  description: string;
+  rating: number;
+  date: string;
+  profilePicture: string;
+}
+interface StarRatingProps {
+  rating: number;
+}
+
+function StarRating({ rating }: StarRatingProps) {
   const totalStars = 5;
-  const filledStars = '★'.repeat(rating); 
+  const filledStars = '★'.repeat(rating);
   const emptyStars = '☆'.repeat(totalStars - rating);
-  
+
   return (
     <span className="text-yellow-500">
       {filledStars}{emptyStars}
     </span>
   );
 }
+interface ReviewProps {
+  reviews: ReviewData;
+}
 
-function Review({reviews}) {
+function Review({ reviews }: ReviewProps) {
   return (
     <div className="bg-[#5e3b21] shadow-md rounded px-4 py-6 mb-4">
       <div className="flex items-center mb-4">
@@ -38,7 +55,7 @@ function Review({reviews}) {
 }
 
 function ReviewsPage() {
-  const [reviews, setReviews] = useState([
+  const [reviews, setReviews] = useState<ReviewData[]>([
     {
       id: 1,
       name: 'Hadia Nadeem',
@@ -96,7 +113,6 @@ function ReviewsPage() {
   ]);
 
   return (
-    
     <div className="min-h-screen bg-[#2e1a0f] container mx-auto p-4">
       <Head>
         <title>Reviews</title>
@@ -112,9 +128,3 @@ function ReviewsPage() {
 }
 
 export default ReviewsPage;
-
-
-
-
-
-
