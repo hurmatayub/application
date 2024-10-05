@@ -1,5 +1,4 @@
 "use client";
-
 import { useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
@@ -13,6 +12,8 @@ interface ReviewData {
   date: string;
   profilePicture: string;
 }
+
+
 interface StarRatingProps {
   rating: number;
 }
@@ -28,6 +29,7 @@ function StarRating({ rating }: StarRatingProps) {
     </span>
   );
 }
+
 interface ReviewProps {
   reviews: ReviewData;
 }
@@ -56,12 +58,12 @@ function Review({ reviews }: ReviewProps) {
 }
 
 function ReviewsPage() {
-  const [reviews, setReviews] = useState<ReviewData[]>([
+  const [reviews] = useState<ReviewData[]>([
     {
       id: 1,
       name: 'Hadia Nadeem',
       title: 'Very Good Iced Latte!',
-      description: "I ordered an iced latte, and it was great! The coffee flavor was robust, and the milk was frothy. The only downside was it could have been a bit colder, but it was still very enjoyable!",
+      description: "I ordered an iced latte, and it&apos;s great! The coffee flavor was robust, and the milk was frothy. The only downside was it could have been a bit colder, but it was still very enjoyable!",
       rating: 4,
       date: '2024-03-30',
       profilePicture: '/images/review1.png',
@@ -70,7 +72,7 @@ function ReviewsPage() {
       id: 2,
       name: 'Hamza Ali',
       title: 'Excellent Latte!',
-      description: "I had their iced latte, and it was phenomenal! The espresso was bold, and the milk created a wonderfully creamy texture. Every sip was a delight, and I can't recommend it enough for coffee lovers.",
+      description: "I had their iced latte, and it was phenomenal! The espresso was bold, and the milk created a wonderfully creamy texture. Every sip was a delight, and I can&apos;t recommend it enough for coffee lovers.",
       rating: 5,
       date: '2024-05-03',
       profilePicture: '/images/review2.png',
@@ -79,7 +81,7 @@ function ReviewsPage() {
       id: 3,
       name: 'Ali Raza',
       title: 'Decent but Could Improve',
-      description: "The iced latte was okay, but it didn't impress me. The flavor was somewhat flat, and I expected a creamier texture. It's drinkable but not memorable.",
+      description: "The iced latte was okay, but it didn&apos;t impress me. The flavor was somewhat flat, and I expected a creamier texture. It&apos;s drinkable but not memorable.",
       rating: 3,
       date: '2024-01-25',
       profilePicture: '/images/review2.png',
@@ -118,7 +120,7 @@ function ReviewsPage() {
       <Head>
         <title>Reviews</title>
       </Head>
-      <h1 className="text-white text-center text-3xl font-bold mb-4">Customer's Reviews</h1>
+      <h1 className="text-white text-center text-3xl font-bold mb-4">Customer&apos;s Reviews</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8 py-6 px-3">
         {reviews.map((review) => (
           <Review key={review.id} reviews={review} />
