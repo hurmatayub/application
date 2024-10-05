@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Head from 'next/head';
+import Image from 'next/image';
 
 interface ReviewData {
   id: number;
@@ -35,7 +36,7 @@ function Review({ reviews }: ReviewProps) {
   return (
     <div className="bg-[#5e3b21] shadow-md rounded px-4 py-6 mb-4">
       <div className="flex items-center mb-4">
-        <img
+        <Image
           src={reviews.profilePicture}
           alt={`${reviews.name} profile`}
           className="w-12 h-12 rounded-full mr-4"
