@@ -219,7 +219,7 @@ function ReviewsPage() {
       description: "The iced latte was okay, but it didn&apos;t impress me. The flavor was somewhat flat, and I expected a creamier texture. It&apos;s drinkable but not memorable.",
       rating: 3,
       date: '2024-01-25',
-      profilePicture: '/images/review1.png',
+      profilePicture: '/images/review2.png',
     },
     {
       id: 4,
@@ -228,7 +228,7 @@ function ReviewsPage() {
       description: "The cappuccino was good, but the service left much to be desired. I had to wait too long for my drink, and the staff seemed a bit distracted. Could be better.",
       rating: 3,
       date: '2024-07-12',
-      profilePicture: '/images/review2.png',
+      profilePicture: '/images/review1.png',
     },
     {
       id: 5,
@@ -246,7 +246,7 @@ function ReviewsPage() {
       description: "Their iced coffee is a must-try! It has a perfect balance of flavor and refreshment, making it ideal for a hot day. Just the right amount of ice too. I really liked it!",
       rating: 4,
       date: '2024-04-20',
-      profilePicture: '/images/review1.png',
+      profilePicture: '/images/review2.png',
     },
   ]);
 

@@ -15,7 +15,6 @@ export default function Navbar() {
     <div className="bg-black text-white font-sans">
       <header className="container mx-auto px-4 py-6">
         <nav className="flex justify-between items-center">
-          {/* Logo Section */}
           <div className="flex items-center">
             <Image
               src="/images/coffee-icon1.png"
@@ -29,20 +28,17 @@ export default function Navbar() {
             </Link>
           </div>
 
-          {/* Hamburger Menu Button for Mobile */}
           <div className="md:hidden">
             <button
               onClick={toggleMenu}
               className="text-white focus:outline-none"
             >
-              {/* Hamburger Icon with three divs */}
               <div className="w-6 h-1 bg-white mb-1"></div>
               <div className="w-6 h-1 bg-white mb-1"></div>
               <div className="w-6 h-1 bg-white"></div>
             </button>
           </div>
 
-          {/* Menu Items for Medium and Larger Screens */}
           <ul className="hidden md:flex space-x-6">
             <li>
               <Link
@@ -86,7 +82,6 @@ export default function Navbar() {
             </li>
           </ul>
 
-          {/* Login Button for Medium and Larger Screens */}
           <div className="hidden md:flex items-center">
             <Link
               href="/login"
@@ -97,7 +92,6 @@ export default function Navbar() {
           </div>
         </nav>
 
-        {/* Mobile Menu Items */}
         <div
           className={`md:hidden ${isOpen ? "block" : "hidden"} mt-4`}
         >
