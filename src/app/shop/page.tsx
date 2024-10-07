@@ -29,7 +29,7 @@ const products = [
   },
 ];
 
-const MilkCoffeeShopPage = () => {
+const ShopPage = () => {
   return (
     <div className="bg-[#2e1a0f]  min-h-screen">
       <section className="bg-hero-image bg-cover bg-center py-16">
@@ -79,7 +79,7 @@ const MilkCoffeeShopPage = () => {
   );
 };
 
-export default MilkCoffeeShopPage;
+export default ShopPage;
 
 
 
